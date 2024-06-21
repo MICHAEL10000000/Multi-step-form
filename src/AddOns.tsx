@@ -1,7 +1,11 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 
-const AddOns = ({ Addon }) => {
+interface AddonProps {
+  Addon: any;
+}
+
+const AddOns: React.FC<AddonProps> = ({ Addon }) => {
   const focushandler = (event: { target: any }) => {
     let EventTarget = event.target;
     if (EventTarget.classList) {
@@ -41,10 +45,11 @@ const AddOns = ({ Addon }) => {
       localdataArray.forEach((item: string[]) => {
         const AddonMain = document.querySelector(".AddonMain");
         console.log(item);
-        const checkboxes = document.querySelectorAll("#checkbox");
+        const checkboxes: any = document.querySelectorAll("#checkbox");
         if (item[0] === "Online service") {
           AddonMain?.children[0].classList.add("focusAddon");
           checkboxes[0].checked = true;
+
           /* AddonMain?.children[0].firstChild.checked = true; */
         }
         if (item[0] === "Larger storage") {
@@ -68,8 +73,11 @@ const AddOns = ({ Addon }) => {
           name="Check"
           id="checkbox"
           className=" size-4 md:mr-4"
-          onClick={(event) => {
-            Checkfocushandler(event.target.parentNode);
+          onClick={(e) => {
+            const target = e.target as HTMLElement;
+            if (target.parentNode) {
+              Checkfocushandler(target.parentNode as HTMLElement);
+            }
           }}
         />
         <div className="md:mr-4 ">
@@ -88,8 +96,15 @@ const AddOns = ({ Addon }) => {
           name="Check"
           id="checkbox"
           className=" size-4 md:mr-4"
-          onClick={(event) => {
-            Checkfocushandler(event.target.parentNode);
+          onClick={(e) => {
+            const target = e.target as HTMLElement;
+            if (target.parentNode) {
+              Checkfocushandler(target.parentNode as HTMLElement);
+            }
+            /*   if(event.target){
+               Checkfocushandler(event.target.parentNode);
+            }
+            */
           }}
         />
         <div className="md:mr-4 ">
@@ -108,8 +123,11 @@ const AddOns = ({ Addon }) => {
           name="Check"
           id="checkbox"
           className=" size-4 md:mr-4"
-          onClick={(event) => {
-            Checkfocushandler(event.target.parentNode);
+          onClick={(e) => {
+            const target = e.target as HTMLElement;
+            if (target.parentNode) {
+              Checkfocushandler(target.parentNode as HTMLElement);
+            }
           }}
         />
         <div className="md:mr-4 ">
