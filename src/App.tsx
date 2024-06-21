@@ -109,7 +109,7 @@ function App() {
   };
   return (
     <BrowserRouter>
-      <div className="App flex justify-center md:items-center ">
+      <div className="App flex justify-center md:items-center md:bg-Magnolia ">
         <div className=" Try md:mx-4 md:bg-white ">
           {" "}
           {/* md:w-11/12 */}
@@ -165,10 +165,10 @@ function App() {
           </div>
           <div className="relative text-section md:bg-white">
             <div className="main box  py-56 md:py-0 lg:pr-0 px-6 md:bg-white  text-lg">
-              <div className=" rounded-md absolute  md:static -top-12 left-1/2 transform -translate-x-1/2 md:transform-none md:translate-x-0 md:top-0 md-left-0 px-6 bg-white w-11/12 lg:w-full pb-8 md:pb-0 pt-2">
+              <div className=" bg-white rounded-md absolute  md:static -top-12 left-1/2 transform -translate-x-1/2 md:transform-none md:translate-x-0 md:top-0 md-left-0 px-6 w-11/12 lg:w-full pb-8 md:pb-0 pt-2">
                 <Routes>
                   <Route
-                    path="/"
+                    path="/Multi-step-form"
                     element={
                       <>
                         <Title_des
