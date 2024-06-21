@@ -16,10 +16,7 @@ const final = () => {
         <p className=" font-Ubuntu-Medium text-Coolgray">
           We hope you have fun using our
         </p>
-        <p
-          className=" font-Ubuntu-Medium text-Coolgray "
-          style={{ width: "40ch" }}
-        >
+        <p className=" finaltext font-Ubuntu-Medium text-Coolgray text-center ">
           platform. If you ever need support, please feel free to email us at
           support@loremgaming.com
         </p>

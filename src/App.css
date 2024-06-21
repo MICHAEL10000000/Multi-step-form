@@ -51,6 +51,9 @@
   background-size: cover;
 } */
 @media screen and (min-width:768px) {
+  .finaltext{
+    width: 30ch;
+  }
   .App{
     min-height: 100vh;
     background: var(--Magnolia)
