@@ -1,0 +1,137 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root{
+  /*  ### Primary */
+
+  --Marineblue:hsl(213, 96%, 18%);
+  --Purplishblue:hsl(243, 100%, 62%);
+  --Pastelblue:hsl(228, 100%, 84%);
+  --Lightblue:hsl(206, 94%, 87%);
+  --Strawberryred:hsl(354, 84%, 57%);
+
+/* ### Neutral */
+
+  --Coolgray:hsl(231, 11%, 63%);
+  --Lightgray:hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster:hsl(231, 100%, 99%);
+  --White:hsl(0, 0%, 100%);
+}
+.App{
+  min-height: 100vh;
+  background: linear-gradient(to bottom, var(--Magnolia) 60%, var(--White) 50% );
+}
+.cover{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100% ;
+}
+@media screen and (height> 740px ) {
+  
+}
+.text-section{
+  background: linear-gradient(to bottom, var(--Magnolia) 76%, var(--White) 50% );
+ 
+}
+/* body{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+/* .nums{
+  background-image: url(./assets/images/bg-sidebar-desktop.svg);
+  background-size: cover;
+} */
+@media screen and (min-width:768px) {
+  body{
+    background-color: var(--Magnolia);
+  }
+  .Try {
+    padding: 2rem 1rem 2rem 1rem;
+    margin-top: 0.5rem;
+    display: grid;
+    align-items: flex-start;
+    justify-items: flex-start;
+    grid-template-columns: 1fr 2fr;
+  }
+  .App {
+    position: relative;
+  }
+  .title{
+    width: 40ch;
+  }
+  .footer{
+    position:fixed;
+    width: 55%;
+    bottom: 25%;
+    right: 7%;
+  }
+  /* .Try {
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-top: 0.5rem;
+    display: grid;
+    align-self: flex-start;
+    justify-self: flex-start;
+    grid-template-columns: 1fr 2fr;
+  } */
+  /* right: "7rem"; width: "50%"; bottom: "0.75rem"; */
+}
+@media screen and (min-width:1024px) {
+  .Try {
+    padding: 0.5rem 0rem 0.5rem 1rem;
+    margin-top: 0.5rem;
+    display: grid;
+    align-self: flex-start;
+    justify-self: flex-start;
+    grid-template-columns: 1fr 2fr;
+  }
+  .footer{
+    width: 50%;
+    bottom: 0.75rem;
+    right: 12%;
+  }
+}
+@media screen and (min-width:1200px) {
+  .footer{
+    width: 35%;
+    bottom: 0.75rem;
+    right: 22%;
+  }
+}
+.round {
+  border-radius: 50%;
+}
+@font-face {
+  font-family: Ubuntu-B;
+  src: url(./assets/fonts/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: Ubuntu-M;
+  src: url(./assets/fonts/Ubuntu-Medium.ttf);
+}
+@font-face {
+  font-family: Ubuntu-S;
+  src: url(./assets/fonts/Ubuntu-Regular.ttf);
+}
+body{
+
+}
+.selectedFocus {
+  border: solid 2px var(--Purplishblue);
+  background: var(--Magnolia) ;
+  
+}
+.focusAddon {
+  border-color: var(--Purplishblue);
+  background-color: var(--Alabaster);
+}
