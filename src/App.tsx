@@ -122,7 +122,7 @@ function App() {
               <Hdnumber
                 firstFunction={(e: { preventDefault: () => void }) => {
                   console.log(nextLink);
-                  if (nextLink >= 3) {
+                  if (nextLink >= 4) {
                     e.preventDefault();
                   } else {
                     setnextLink(1);
@@ -132,7 +132,7 @@ function App() {
                 }}
                 secondFunction={(e: { preventDefault: () => void }) => {
                   console.log(nextLink);
-                  if (nextLink >= 3) {
+                  if (nextLink >= 4) {
                     e.preventDefault();
                   } else {
                     setnextLink(2);
@@ -152,11 +152,11 @@ function App() {
                 }}
                 fourthFunction={(e: { preventDefault: () => void }) => {
                   console.log(nextLink);
-                  if (nextLink >= 3) {
+                  if (nextLink >= 4) {
                     e.preventDefault();
                   } else {
                     console.log(nextLink);
-                    setnextLink(4);
+                    setnextLink(3);
                     previousFunction();
                   }
                 }}

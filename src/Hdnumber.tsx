@@ -14,7 +14,12 @@ const Hdnumber: React.FC<HdnumberProps> = ({
   thirdFunction,
   fourthFunction,
 }) => {
-  const linkList = ["./", "./Selection", "./AddOns", "./Finishing"];
+  const linkList = [
+    "/Multi-step-form",
+    "./Selection",
+    "./AddOns",
+    "./Finishing",
+  ];
 
   return (
     <div className=" Header mb-8 flex justify-center items-center  text-white top-6  ">
