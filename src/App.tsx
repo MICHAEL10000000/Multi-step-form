@@ -16,7 +16,13 @@ import desktopImage from "./assets/images/bg-sidebar-desktop.svg";
 function App() {
   localStorage.clear;
   const [count, setCount] = useState(0);
-  const linkList = ["./", "/Selection", "/AddOns", "/Finishing", "/Final"];
+  const linkList = [
+    "/Multi-step-form",
+    "/Selection",
+    "/AddOns",
+    "/Finishing",
+    "/Final",
+  ];
   const [nextLink, setnextLink] = useState(1);
   /*  useEffect(() => {
     const telePhoneNumber: any = document.querySelector("#telephone");
